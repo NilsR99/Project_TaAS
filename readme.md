@@ -1,3 +1,4 @@
+# Project TaAS
 # Description
 This repository contains a comprehensive time tracking system developed as part of the "Object-Oriented Programming" course. The project is designed to manage and monitor employee working hours effectively. It leverages object-oriented principles in Java to ensure scalability, maintainability, and ease of use.
 Features
