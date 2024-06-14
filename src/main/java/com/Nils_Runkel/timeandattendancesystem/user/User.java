@@ -1,13 +1,14 @@
 package com.Nils_Runkel.timeandattendancesystem.user;
 
+import java.io.Serializable;
 import java.util.UUID;
 
 /**
  * Represents a user in the system.
  * This class is abstract and cannot be instantiated directly.
  */
-public abstract class User {
-
+public abstract class User implements Serializable {
+    private static final long serialVersionUID = 1L; //Serialisierungs-ID
     private static int nextStaffnumber = 0;
     private final int staffNumber;
     private String role;

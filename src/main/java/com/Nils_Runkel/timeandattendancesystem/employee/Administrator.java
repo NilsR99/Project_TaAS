@@ -29,7 +29,7 @@ public class Administrator extends User {
         if (password.equals(password2)) {
             FullTimeEmployee employee = new FullTimeEmployee(username, password);
             employees.put(employee.getUsername(), employee);
-            System.out.println("Mitarbeiter hinzugefügt: " + employee.getUsername());
+            System.out.printf("Mitarbeiter hinzugefügt: %s Nr: %03d", employee.getUsername(), employee.getStaffNumber());
         } else {
             System.out.println("Die Passwörter stimmen nicht überein!");
         }
@@ -41,5 +41,15 @@ public class Administrator extends User {
             User employee = employees.get(username);
             System.out.println("Personalnummer: " + employee.getStaffNumber() + ", Name: " + employee.getUsername() + ", Rolle: " + employee.getRole());
         }
+    }
+    public Hashtable<String, User> getEmployees() {
+        return employees;
+    }
+
+    public void setEmployees(Hashtable<String, User> employees) {
+        this.employees = employees;
+    }
+    public User getEmployee(String username) {
+        return employees.get(username);
     }
 }
