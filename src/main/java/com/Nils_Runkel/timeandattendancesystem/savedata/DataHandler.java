@@ -1,4 +1,4 @@
-package com.Nils_Runkel.timeandattendancesystem.savedate;
+package com.Nils_Runkel.timeandattendancesystem.savedata;
 
 import com.Nils_Runkel.timeandattendancesystem.user.User;
 
