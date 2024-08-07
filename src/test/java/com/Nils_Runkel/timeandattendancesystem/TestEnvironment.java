@@ -15,6 +15,7 @@ public class TestEnvironment {
 
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
+        File file = new File(DATA_FILE);
 
         //Laden der Mitarbeiterdaten
         Hashtable<String, User> loadedEmployees = DataHandler.loadData(DATA_FILE); // erstellen der Hashtable für die Benutzer
